@@ -1,0 +1,280 @@
+/* Basic Reset and Font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #fff8f0;
+    color: #2e2e2e;
+    width: 100%;
+}
+
+/* Header */
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: #fcebd5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+#header .logo {
+    width: 120px;
+}
+
+#ak {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+#ak li a {
+    text-decoration: none;
+    color: #2e2e2e;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+#ak li a:hover,
+#ak li a.active {
+    color: #d97c4d;
+}
+
+#close {
+    display: none;
+}
+
+#mobile {
+    display: none;
+}
+
+/* Hero Section */
+#text {
+    background-image: url("asset/banner.jpeg");
+    background-size: cover;
+    background-position: center;
+    padding: 100px 60px;
+    text-align: left;
+    color: #d9d8d8;
+}
+
+#text h1 {
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+#text h2 {
+    font-size: 32px;
+    color: #fdfdfd;
+}
+
+#text p {
+    margin: 15px 0;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+#text button {
+    padding: 12px 30px;
+    background-color: #d97c4d;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* Features Section */
+.section-p1 {
+    padding: 40px 60px;
+}
+
+#feature {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #fff2e6;
+}
+
+.f-box {
+    width: 200px;
+    text-align: center;
+    margin: 20px;
+}
+
+.f-box img {
+    width: 100px;
+    height: 100px;
+}
+
+.f-box h6 {
+    margin-top: 10px;
+    color: #d97c4d;
+    font-size: 16px;
+}
+
+/* Product Section */
+#product {
+    text-align: center;
+}
+
+.pro-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.pro {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    width: 200px;
+    margin: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    position: relative;
+}
+
+
+.filter-buttons {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.filter-buttons button {
+    padding: 8px 20px;
+    margin: 5px;
+    background-color: #222;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-family: serif;
+}
+
+.filter-buttons button:hover {
+    background-color: #555;
+}
+
+.pro img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.des span {
+    font-size: 12px;
+    color: #888;
+}
+
+.des h5 {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.des h4 {
+    color: #d97c4d;
+    font-weight: bold;
+}
+
+.cart-icon {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    color: #d97c4d;
+    font-size: 18px;
+}
+
+/* Newsletter */
+#newsletter {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fcebd5;
+    padding: 30px 60px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#newsletter .form {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+#newsletter input {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#newsletter button {
+    padding: 10px 20px;
+    background-color: #d97c4d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+/* Footer */
+footer {
+    background-color: #fff2e6;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 60px;
+    flex-wrap: wrap;
+}
+
+footer .col {
+    margin-bottom: 20px;
+}
+
+footer h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+footer p,
+footer a {
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+    margin-bottom: 6px;
+}
+
+footer .logo {
+    width: 100px;
+}
+
+footer .icon i {
+    margin-right: 10px;
+    font-size: 18px;
+    color: #d97c4d;
+    cursor: pointer;
+}
+
+/* Responsive */
+@media(max-width:768px) {
+    #ak {
+        display: none;
+    }
+
+    #mobile {
+        display: block;
+    }
+
+    .section-p1,
+    footer {
+        padding: 20px;
+    }
+
+    #newsletter {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
